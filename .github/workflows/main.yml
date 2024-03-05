@@ -1,0 +1,15 @@
+name: Publish Docker image
+
+on:
+  push:
+    brances: [ ' master' ] 
+
+jobs:
+    push_to_registry:
+      names: Push DOcker image to Docker Hub 
+      runs-on: ubutun-latest
+      steps:
+        - name: check out the repo 
+          uses: actions.checkout@v3
+
+      
